@@ -1,133 +1,431 @@
 <!DOCTYPE html>
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
 <html lang="en">
+    <head>
+        <title> Blue Star Qatar WLL, Doha, Qatar.</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>#000000</title>
-    <link type="image/x-icon" rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAHklEQVQ4T2NkYGD4z0ABYBw1gGE0DBhGw4BhWIQBAE5OEAELnjVHAAAAAElFTkSuQmCC">
-    <style>
-        :root {
-            --color: #000000;
-            --color-transparent: #00000022;
-        }
+        <meta charset="utf-8">
+        <meta name="robots" content="robots.txt" />
+        <meta name="theme-color" content="#0587BB">
+        <meta name="csrf-token" content="Dsdtj8TaCLSiAq75eHjkfMlW10Co5PcpF197kV4O" />
+        <meta name="description" content="Official Page of Blue Star Qatar WLL, Doha" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="keywords" content="mep, hvac, maintenance, electrical design, contracting" />
+        <meta name="author" lang="en" content="shaN &lt;mail@klubnetworks.org&gt;" xml:lang="en" />
+        <meta name="application-name" content="Enterprise Resource Management System - Klub Networks"/> 
 
-        ::selection {
-            background: var(--color-transparent);
-        }
+        <!--   FAV AND TOUCH ICONS   -->
+        <link rel="icon" href="favicon.ico">
+        
+        <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png"> -->
 
-        html,
-        body {
-            background: var(--color);
-            height: 100%;
-            margin: 0;
-        }
+        <!-- GOOGLE FONTS -->
+        <link href='//fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
 
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-        }
+        <!-- COMPILED CSS -->
+        <link rel="stylesheet" href="static/css/all.min.css">
 
-        #color {
-            background: white;
-            color: var(--color);
-            font-size: 2.5rem;
-            font-weight: 300;
-            padding: 2.25rem 3rem;
-            font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-            cursor: text;
-        }
-    </style>
-</head>
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    
+    </head>
+    <body>
 
-<body>
-    <p id="color">#000000</p>
-    <script>
-        function randomInt(min, max) {
-            return Math.floor(Math.random() * (max - min + 1) + min);
-        }
+        <header class="header-background header" id="header"> <!--Start: "Header Area"-->
+            <div class="fix header-overlay overlay-color">
 
-        function hslToHex(h, s, l) {
-            h /= 360;
-            s /= 100;
-            l /= 100;
-            var r = void 0,
-                g = void 0,
-                b = void 0;
-            if (s === 0) {
-                r = g = b = l; // achromatic
-            } else {
-                var hue2rgb = function hue2rgb(p, q, t) {
-                    if (t < 0) t += 1;
-                    if (t > 1) t -= 1;
-                    if (t < 1 / 6) return p + (q - p) * 6 * t;
-                    if (t < 1 / 2) return q;
-                    if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
-                    return p;
-                };
-                var q = l < 0.5 ? l * (1 + s) : l + s - l * s;
-                var p = 2 * l - q;
-                r = hue2rgb(p, q, h + 1 / 3);
-                g = hue2rgb(p, q, h);
-                b = hue2rgb(p, q, h - 1 / 3);
-            }
-            var toHex = function toHex(x) {
-                var hex = Math.round(x * 255).toString(16);
-                return hex.length === 1 ? '0' + hex : hex;
-            };
-            return '#' + toHex(r) + toHex(g) + toHex(b);
-        }
+                <!-- Start: Navbar Area  -->
+                <div class="header-navbar navbar-fixed-top" id="header-navbar">
+                    <nav class="navbar navbar-inverse">
+                        <div class="container">
+                            <div class="navbar-header">
 
-        window.onload = function () {
-            let stopProp = function (ev) {
-                ev.stopPropagation();
-            }
+    <!-- Show in Mobile -->
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar icon-close-1"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar icon-close-2"></span> 
+    </button>
 
-            var colorElement = document.getElementById("color");
-            colorElement.addEventListener("click", stopProp, false);
-            colorElement.addEventListener("mousedown", stopProp, false);
 
-            var setFavicon = function (hex) {
-                var canvas = document.createElement('canvas');
-                canvas.width = 16;
-                canvas.height = 16;
-                var ctx = canvas.getContext('2d');
-                ctx.fillStyle = hex;
-                ctx.fillRect(0, 0, 16, 16);
-                document.getElementsByTagName('link')[0].href = canvas.toDataURL("image/x-icon");
-            }
+    <a class="navbar-brand" href="index.html">
+        <img src="static/img/blueStar.jpg" class="img-responsive" alt="">
+    </a> 
 
-            var setRandomColor = function setRandomColor() {
-                var h = void 0,
-                    s = void 0,
-                    l = void 0;
+                            </div>
 
-                h = randomInt(0, 359);
-                s = randomInt(55, 75);
-                l = randomInt(40, 60);
+                            <!-- Show in Dexktop -->
+    <button type="button" class="navbar-toggle navbar-cus hidden-xs " id="navbar-cus" style="margin-left: 10px;">
+        <span class="lines"></span>
+    </button>
 
-                document.documentElement.style.setProperty('--color', 'hsl(' + h + ', ' + s + '%, ' + l + '%)');
-                var hex = hslToHex(h, s, l);
-                document.title = hex;
-                colorElement.innerHTML = hex;
-                document.documentElement.style.setProperty('--color-transparent', hex + '22');
+    <!-- Navbar Option -->
 
-                setFavicon(hex);
-            };
-            setRandomColor();
+<ul class="nav navbar-nav navbar-right">
+    
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: #EEE">Login</a>
 
-            var body = document.getElementsByTagName("body")[0];
-            body.addEventListener("mousedown", function (ev) {
-                ev.preventDefault();
-            });
-            body.addEventListener("click", function () {
-                setRandomColor();
-            }, false);
-        };
-    </script>
-</body>
+        <ul class="dropdown-menu">
+          <li class="header">
+            <h4 class="text-muted">Login Here</h4>
+            <hr>
+          </li>
+          <li>
+
+        <form action="/login" method="POST" enctype="multipart/form-data">
+            <div class="form-group text-primary">
+                <label>User ID</label>
+                <input autofocus type="text" required name="card_id" class="form-control" placeholder="User ID">
+            </div>
+            <div class="form-group text-primary">
+                <label>Password</label>
+                <input type="password" required name="password" class="form-control" placeholder="Password">
+                <input type="hidden" name="_token" value="Dsdtj8TaCLSiAq75eHjkfMlW10Co5PcpF197kV4O">
+            </div>
+            <div class="form-group" align="right">
+                <input type="submit"  class="btn btn-flat btn-primary btn-sm" value="Login" />
+            </div>
+
+        </form>
+        
+          </li>
+        </ul>
+
+
+    </li>
+
+</ul>
+
+    <div id="myNavbar">
+        <ul id="navbar-nav" class="myNavbarUl nav navbar-nav navbar-right ">
+    
+            <li><a href="#header">Home</a></li>
+            <li><a href="#section-1">About</a></li>
+            <li><a href="#section-3">Services</a></li>                
+            <li><a href="#section-4">Contact</a></li>
+
+        </ul>
+    </div>
+                        </div> <!-- End: container  -->
+                    </nav> <!-- End: navbar navbar-inverse  -->
+                </div>
+                <!-- End: Navbar Area  -->
+                
+                <div class="container">
+                    <div class="row header-body" id="header-body">
+
+                        <div class="col-md-5 heading wow fadeInRight animated" data-wow-offset="120" data-wow-duration="1.5s">
+                            <h1><b>Blue Star Qatar WLL</h1>
+
+                            <h4 style="color: #CCC">Electro Mechanical Contracting Company.</h4>
+
+                            <!-- Start: Button area -->
+                            <div class="btn-countdown btn-scroll">
+                                <div class="btn-group">
+                                    <a href="#section-3" class="btn-border btn-standard btn btn-cus">Services</a>
+                                </div>
+                            </div>
+                            <!-- End: Button area" -->
+
+                        </div>
+
+                        <div class="col-md-offset-1 col-md-6 pera wow fadeInLeft animated" data-wow-offset="120" data-wow-duration="1.5s">
+                            
+                            <div class="container-fluid">
+                                <h2>Superior Project Delivery</h2>
+                                <h4 style="color: #CCC">Through</h4>
+                                <h2 style="color: #DDD; margin: 2px 0px"> Intelligent engineering</h2>
+                                <h2 style="color: #EEE; margin: 2px 0px">Modern execution practices</h2>
+                                <h2 style="color: #CCC; margin: 2px 0px">Commited teams</h2>
+                               
+                            </div>
+
+                        </div><!-- End: col-md-5 pera  -->
+
+
+                    </div><!-- End: header-body  -->
+                </div> <!-- End: container  -->
+
+
+            </div> <!-- End: fix header-overlay overlay-color  -->
+        </header> <!--End: Header Area-->
+
+        
+        <section class=" about-our-event" id="section-1"><!-- Start: about-our-event, "SECTION-1" -->
+            <div class="container">
+
+                <!-- Start: About Our Event Area  -->
+                <div class="row about-our-event-body">
+                    
+                    <!-- Start: About-Our-Event Left Area  -->
+                    <div class="about-our-event-left col-md-5 wow fadeInLeft animated" data-wow-offset="120" data-wow-duration="1.5s">
+                        <div class="about-our-event-left-body">
+                            <h2>ABOUT</h2>
+                            <p> Blue Star Qatar WLL, headquartered at Doha, is a subsidiary of BLUE STAR LIMITED, India's leading air conditioning and commercial refrigeration company with over seven decades of  experience in providing expert solutions in the building, industrial and infrastructure segments. Blue Star Qatar WLL, handles the central air conditioning and MEP contracts in the Middle East for residential, commercial and industrial purposes.</p>
+                        </div>
+                    </div>
+                    <!-- End: About-Our-Event Left Area  -->
+                    
+                    <!-- Start: About-Our-Event Right Area  -->
+                    <div class="about-our-event-right col-md-offset-1 col-md-6 wow fadeInRight animated" data-wow-offset="120" data-wow-duration="1.5s">
+                        <div class="container-fluid">
+                            <div class="row about-our-event-right-body">
+                                <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4 background time hide">
+                                    <span class="counter style-all">0+</span>
+                                    <span class="title">Employees</span>
+                                </div>
+                                <div class="col-md-6 col-sm-4 col-xs-4 col-lg-4 background time">
+                                    <span class="counter style-all">40+</span>
+                                    <span class="title">Projects</span>
+                                </div>
+                                <div class="col-md-6 col-sm-4 col-xs-4 col-lg-4 background time">
+                                    <span class="counter style-all">13</span>
+                                    <span class="title">Years Experience</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End: About-Our-Event Right Area  -->
+                </div>
+                <!-- End: About Our Event Area  -->
+                
+
+                <!-- Start: About-Our-Event Overlay background Area  -->
+                <div class="about-background-image">
+
+                    <!-- About-Our-Event Overlay background Left Area  -->
+                    <div class="background-left col-sm-12 col-md-6"></div>
+
+                    <!-- About-Our-Event Overlay background Right Area  -->
+                    <div class="bg-img-3 background-right col-sm-12 col-md-6">
+                        <div class="background-right-overlay-color"></div>
+                    </div>
+
+                </div> <!--  about-background-image  -->
+
+            </div> <!-- End: container -->
+        </section> <!-- End: about-our-event, "SECTION-1" -->
+
+      
+
+
+        <section class="collapse-area" id="section-3"> <!-- Start: Collapse Area, "#SECTION-3" -->
+            <div class="container">
+                <div class="row">
+
+                    <!--  Start: Collapse Area Left   -->
+                    <div class="collapse-left hide col-sm-12 col-md-4 col-lg-4 hidden-xs hidden-sm wow fadeInUp animated" data-wow-offset="120" data-wow-duration="1.5s">
+                        <img src="static/img/bg_1.jpg" alt="" class="">
+                    </div>
+                    <!--  End: Collapse Area Left  -->
+
+
+                    <!-- Start: Collapse Area Right  -->
+                    <div class="collapse-right col-sm-12 col-md-offset-1 col-md-7 col-lg-offset-1 col-lg-7">
+
+                        <h2 class="wow fadeInDown animated" data-wow-offset="10" data-wow-duration="1.5s">Services</h2>
+                        
+                        <!--  Start: Collapse-tab  -->
+                        <div class="collapse-tab ">
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default wow fadeInUp animated" data-wow-offset="120" data-wow-duration="1.5s" id="panel1"><!-- Start: Tab-1 -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+
+                                            <!-- Tab-1 Title Goes Here  -->
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="">
+                                                MEP Contracting
+                                                <span class="bar hidden-xs"></span>
+                                            </a>
+
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse in">
+
+                                        <!-- Tab-1 Detail Goes Here  -->
+                                        <div class="panel-body">
+                                            Successfully Completed more than 40 premium Projects in Qatar including;
+          FIFA Stadium - Energy centers, District Cooling Plants/ Central Plants
+          Hospitals, Malls, Educational Institutes, Housing Complex, Substations, 
+          Hotels & Mixed-use Buildings and Industrial MEP Projects
+
+                                        </div>
+
+                                    </div>
+                                </div><!-- End: Tab-1 -->
+                                <div class="panel panel-default wow fadeInUp animated" data-wow-offset="120" data-wow-duration="1.5s" id="panel2"><!-- Start: Tab-2 -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <!-- Tab-1 Title Goes Here  -->
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">
+                                            Maintenance
+                                                <span class="bar hidden-xs"></span>
+                                            </a>
+
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse">
+
+                                        <!-- Tab-2 Detail Goes Here  -->
+                                        <div class="panel-body">
+                                            Maintenance jobs under contract.
+                                        </div>
+
+                                    </div>
+                                </div><!-- End: Tab-2 -->
+                                <div class="panel panel-default wow fadeInUp animated" data-wow-offset="120" data-wow-duration="1.5s" id="panel3"><!-- Start: Tab-3 -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+
+                                            <!-- Tab-3 Title Goes Here  -->
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">
+                                            Consulting Works
+                                                <span class="bar hidden-xs"></span>
+                                            </a>
+
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse">
+
+                                        <!-- Tab-3 Detail Goes Here  -->
+                                        <div class="panel-body">
+                                           Inhouse Engineering & Design expertise with latest technologies
+                                        </div>
+
+                                    </div>
+                                </div><!-- End: Tab-3 -->
+                                <div class="panel panel-default wow fadeInUp animated" data-wow-offset="120" data-wow-duration="1.5s" id="panel4"><!-- Start: Tab-4 -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+
+                                            <!-- Tab-4 Title Goes Here  -->
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" class="collapsed">
+                                                Equipment Sales
+                                                <span class="bar hidden-xs"></span>
+                                            </a>
+
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFour" class="panel-collapse collapse">
+
+                                        <!-- Tab-4 Detail Goes Here  -->
+                                        <div class="panel-body">
+                                            HVAC Equipments as-well as their after sale service.
+                                        </div>
+
+                                    </div>
+                                </div><!-- End: Tab-4 -->
+                                
+                            </div> <!-- End: .panel-group  -->
+                        </div><!--  End: .collapse-tab  -->
+
+                    </div>
+                    <!-- End: Collapse Area Right  -->
+
+
+                </div> <!-- End: .row  -->
+            </div> <!-- End: .container  -->
+        </section> <!-- End: Collapse Area, "#SECTION-3" -->
+
+
+
+      
+
+
+
+        <!-- Start: Contact Us Area, "#SECTION-4" -->
+        <section class="contact-us" id="section-4"> 
+            <div class="container">
+                <div class="row contact-us-body">
+
+                    <div class="contact-us-left col-md-4 wow fadeInRight animated" data-wow-offset="120" data-wow-duration="1.5s">
+
+                        <h2>Contact Info :</h2>
+                        <p>
+                            <span class="bold">Address :</span> 
+                                <br>Building No - 349, Zone No (Area) - 52 
+                                <br>Street No - 990, P.O.BOX - 47242
+                                <br>Office No 1, AL RAYYAN, AL QADEEM STREET
+                                <br>Near Al Rayyan Park, DOHA, QATAR</p>
+                        <p><span class="bold">Phone : </span><a href="callto:+97444582271">+974 44 582 271</a></p>
+                        <p><span class="bold">Mail : </span><a href="mailto:contact@bluestarqatar.com">contact@bluestarqatar.com</a></p>
+                        <p style="padding-left: 40px;"><a href="mailto:sales@bluestarqatar.com">sales@bluestarqatar.com</a></p>
+                        <p><span class="bold">Fax : </span><a>+974 44 580 078</a></p>
+                        
+                        <!-- Social Icon Goes Here  -->
+                        <div class="social-icon">
+                            <p><span class="bold">Find Us On</span></p>
+                            <ul class="nav navbar-left">
+                                <li><a href="#"> <i class="fa facebook fa-facebook"></i> </a></li>
+                                <li><a href="#"> <i class="fa twitter fa-twitter"></i> </a></li>
+                                <li><a href="#"> <i class="fa skype fa-skype"></i> </a></li>
+                                <li><a href="#"> <i class="fa rss fa-rss "></i> </a></li>
+                            </ul>
+                        </div>
+
+                    </div> <!-- End: .contact-us-left .col-md-4  -->
+                    
+                    <!-- Start: Google Map Area, "Part-1-Up" "map" -->
+                    <div class="contact-us-right col-md-offset-1 col-md-7 wow fadeInLeft animated" data-wow-offset="120" data-wow-duration="1.5s">
+                        <div class="row">
+                            <div class="map" id="map">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End: Google Map Area, "map" -->
+
+                </div> <!-- End: .row .contact-us-body  -->
+            </div> <!--  End: .container  -->
+        </section> <!-- End: Contact Us Area, "#SECTION-4" -->
+
+
+
+
+        <!-- Start: Footer Area  -->
+        <footer class="footer"> 
+            <div class="container">
+                <div class="row footer-body btn-scroll">
+                    
+                    <div class="logo col-lg-6 text-muted col-md-6 col-sm-6 col-xs-6">
+                        Maintained By : 
+                        <a href="#">Blue Star Qatar WLL</a> 2020
+                    </div>
+                    
+                    <div class="top-buttom col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                         <a href="#header" class="btn-standard btn btn-top"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
+                    </div>
+                </div>
+            </div> 
+        </footer> 
+
+
+        <!-- move this static files to a sub domain with no cache header later -->
+        <script src="static/js/all.min.js"></script>
+        
+        <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyB8_h2MTORq_S7rQnhRq2nPbJCa7WqbqgQ"
+        async defer></script>
+
+        <script src="static/js/scripts.min.js"></script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-28878009-6', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+
+    </body>
 
 </html>
